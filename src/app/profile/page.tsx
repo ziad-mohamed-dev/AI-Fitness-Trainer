@@ -30,8 +30,8 @@ const ProfilePage = () => {
   return (
     <div className="container mx-auto space-y-12">
       <ProfileHeader user={user} />
-      {allPlans && selectedPlan ? (
-        allPlans.length > 0 ? (
+      {allPlans ? (
+        allPlans.length > 0 && selectedPlan ? (
           <>
             <PlanSelector
               allPlans={allPlans}

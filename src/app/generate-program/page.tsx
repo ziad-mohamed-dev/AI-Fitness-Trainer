@@ -173,7 +173,7 @@ const GenerateProgramPage = () => {
               className={`absolute inset-0 bg-primary blur-lg opacity-10 rounded-full ${isSpeaking && "animate-pulse"}`}
             ></div>
             <Image
-              sizes="128px"
+              sizes="256px"
               fill
               src="/ai-avatar.png"
               alt="ai-avatar.png"
@@ -206,7 +206,7 @@ const GenerateProgramPage = () => {
             <>
               <div className="size-32 rounded-full overflow-hidden relative border border-border">
                 <Image
-                  sizes="128px"
+                  sizes="256px"
                   fill
                   src={user.imageUrl}
                   alt="ai-avatar.png"
