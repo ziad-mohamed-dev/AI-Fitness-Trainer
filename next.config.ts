@@ -1,13 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  unoptimized: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
         hostname: "randomuser.me",
-        pathname: "/api/portraits/men/*",
+        pathname: "/api/portraits/men/**",
       },
       {
         protocol: "https",
