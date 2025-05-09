@@ -8,11 +8,6 @@ const nextConfig: NextConfig = {
         hostname: "img.clerk.com",
         pathname: "/**",
       },
-      {
-        protocol: "https",
-        hostname: "randomuser.me",
-        pathname: "/api/portraits/men/**",
-      },
     ],
   },
   /* config options here */

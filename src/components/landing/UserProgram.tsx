@@ -80,7 +80,6 @@ const ProgramCards = () => {
                   height={52}
                   className="rounded-full"
                   alt="user"
-                  sizes="52px"
                 />
                 <div>
                   <p className="text-lg">
