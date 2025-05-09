@@ -4,11 +4,18 @@ const nextConfig: NextConfig = {
   reactStrictMode: false,
   images: {
     remotePatterns: [
-      new URL("https://randomuser.me/api/portraits/men/**"),
-      new URL("https://img.clerk.com/**"),
+      {
+        protocol: "https",
+        hostname: "randomuser.me",
+        pathname: "/api/portraits/men/**",
+      },
+      {
+        protocol: "https",
+        hostname: "img.clerk.com",
+        pathname: "/**",
+      },
     ],
   },
-  /* config options here */
 };
 
 export default nextConfig;
