@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "randomuser.me",
-        pathname: "/api/portraits/men/**",
+        pathname: "/api/portraits/men/*",
       },
       {
         protocol: "https",
