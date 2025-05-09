@@ -12,13 +12,13 @@ import NoFitnessPlan from "@/components/profile/NoFitnessPlan";
 import { Plan } from "@/types/plan";
 
 const ProfilePage = () => {
-  const [selectedPlan, setSelectedPlan] = useState<Plan>();
   const { user } = useUser();
   const userId = user?.id;
   const allPlans = useQuery(
     api.plans.getUserPlans,
     userId ? { userId } : "skip"
   );
+  const [selectedPlan, setSelectedPlan] = useState<Plan>();
 
   // SET ACTIVE PLAN AS DEFUALT
   useEffect(() => {

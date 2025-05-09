@@ -21,6 +21,7 @@ const ProfileHeader = ({ user }: ProfileHeaderProps) => {
                 alt="user image"
                 sizes="96px"
                 priority
+                aria-label="User profile picture"
               />
               <span className="block absolute bottom-1 right-1 bg-green-500 size-3 rounded-full"></span>
             </>

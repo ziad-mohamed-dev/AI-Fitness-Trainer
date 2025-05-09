@@ -2,6 +2,7 @@ import { Dispatch, SetStateAction } from "react";
 import { Button } from "../ui/button";
 import CornerElements from "./CornerElements";
 import { Plan } from "@/types/plan";
+import { cn } from "@/lib/utils";
 
 interface PlanSelectorProps {
   allPlans: Plan[];
@@ -32,7 +33,12 @@ const PlanSelector = ({
           <Button
             key={plan._id}
             onClick={() => setSelectedPlan(plan)}
-            className={`border rounded font-mono tracking-tight text-xs ${selectedPlan._id === plan._id ? "bg-primary/20 hover:bg-primary/20 text-primary border-primary" : "bg-transparent border-border text-foreground hover:bg-primary/10"}`}
+            className={cn(
+              "border rounded font-mono tracking-tight text-xs",
+              selectedPlan._id === plan._id
+                ? "bg-primary/20 hover:bg-primary/20 text-primary border-primary"
+                : "bg-transparent border-border text-foreground hover:bg-primary/10"
+            )}
           >
             {plan.name}
             {plan.isActive && (
