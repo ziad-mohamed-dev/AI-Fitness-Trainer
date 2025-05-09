@@ -74,14 +74,14 @@ const ProgramCards = () => {
             {/* USER DETAILS */}
             <div className="space-y-4">
               <div className="flex gap-2">
-                <div className="h-[52px] w-[52px] rounded-full relative overflow-hidden">
-                  <Image
-                    src={program.profilePic}
-                    fill
-                    alt="user"
-                    sizes="52px"
-                  />
-                </div>
+                <Image
+                  src={program.profilePic}
+                  width={52}
+                  height={52}
+                  className="rounded-full"
+                  alt="user"
+                  sizes="52px"
+                />
                 <div>
                   <p className="text-lg">
                     {program.first_name}
