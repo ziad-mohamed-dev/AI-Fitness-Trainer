@@ -86,7 +86,7 @@ const Navbar = () => {
                 Sign In
               </Button>
             </SignInButton>
-            <SignUpButton className="hidden sm:block">
+            <SignUpButton>
               <Button>Sign Up</Button>
             </SignUpButton>
           </SignedOut>
